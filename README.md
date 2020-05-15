@@ -23,7 +23,7 @@ Bootstrap files need included in your page files.
 
 ```haml
 <!doctype html>
-<html dir="ltr" lang="fa">
+<html dir="rtl" lang="fa">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
