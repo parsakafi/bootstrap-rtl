@@ -1,0 +1,1526 @@
+<!doctype html>
+<html dir="ltr" lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bootstrap RTL</title>
+
+    <!-- Syntax Highlighter -->
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+          integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+            integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+            crossorigin="anonymous"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/vazir-font@v25.0.0/dist/font-face.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="../dist/bootstrap-rtl.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-spy="scroll" data-target="#navbar-sidebar" data-offset="0">
+<header class="navbar navbar-expand navbar-dark flex-column flex-md-row bd-navbar">
+    <div class="container">
+        <a class="navbar-brand mr-0 ml-0 ml-md-2" href="#" aria-label="Bootstrap">
+            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 612 612"
+                 role="img" focusable="false"><title>Bootstrap</title>
+                <path fill="currentColor"
+                      d="M510 8a94.3 94.3 0 0 1 94 94v408a94.3 94.3 0 0 1-94 94H102a94.3 94.3 0 0 1-94-94V102a94.3 94.3 0 0 1 94-94h408m0-8H102C45.9 0 0 45.9 0 102v408c0 56.1 45.9 102 102 102h408c56.1 0 102-45.9 102-102V102C612 45.9 566.1 0 510 0z"></path>
+                <path fill="currentColor"
+                      d="M196.77 471.5V154.43h124.15c54.27 0 91 31.64 91 79.1 0 33-24.17 63.72-54.71 69.21v1.76c43.07 5.49 70.75 35.82 70.75 78 0 55.81-40 89-107.45 89zm39.55-180.4h63.28c46.8 0 72.29-18.68 72.29-53 0-31.42-21.53-48.78-60-48.78h-75.57zm78.22 145.46c47.68 0 72.73-19.34 72.73-56s-25.93-55.37-76.46-55.37h-74.49v111.4z"></path>
+            </svg>
+            RTL
+        </a>
+
+        <div class="navbar-nav-scroll">
+            <ul class="navbar-nav bd-navbar-nav flex-row">
+                <li class="nav-item">
+                    <a class="nav-link " href="https://parsa.ws">ایجاد شده توسط پارسا</a>
+                </li>
+            </ul>
+        </div>
+
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link p-2" href="https://github.com/parsakafi/bootstrap-rtl" rel="noopener"
+                   aria-label="GitHub">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="navbar-nav-svg" viewBox="0 0 512 499.36" role="img"
+                         focusable="false"><title>GitHub</title>
+                        <path fill="currentColor" fill-rule="evenodd"
+                              d="M256 0C114.64 0 0 114.61 0 256c0 113.09 73.34 209 175.08 242.9 12.8 2.35 17.47-5.56 17.47-12.34 0-6.08-.22-22.18-.35-43.54-71.2 15.49-86.2-34.34-86.2-34.34-11.64-29.57-28.42-37.45-28.42-37.45-23.27-15.84 1.73-15.55 1.73-15.55 25.69 1.81 39.21 26.38 39.21 26.38 22.84 39.12 59.92 27.82 74.5 21.27 2.33-16.54 8.94-27.82 16.25-34.22-56.84-6.43-116.6-28.43-116.6-126.49 0-27.95 10-50.8 26.35-68.69-2.63-6.48-11.42-32.5 2.51-67.75 0 0 21.49-6.88 70.4 26.24a242.65 242.65 0 0 1 128.18 0c48.87-33.13 70.33-26.24 70.33-26.24 14 35.25 5.18 61.27 2.55 67.75 16.41 17.9 26.31 40.75 26.31 68.69 0 98.35-59.85 120-116.88 126.32 9.19 7.9 17.38 23.53 17.38 47.41 0 34.22-.31 61.83-.31 70.23 0 6.85 4.61 14.81 17.6 12.31C438.72 464.97 512 369.08 512 256.02 512 114.62 397.37 0 256 0z"></path>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </div>
+</header>
+<div class="container">
+    <div class="row flex-xl-nowrap">
+        <nav class="col-md-2 pt-4 pb-4 bd-sidebar" id="navbar-sidebar">
+            <ul class="nav flex-column mb-4">
+                <li class="nav-item">
+                    <a class="nav-link" href="#quick-start">Quick start</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#alerts">Alerts</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#breadcrumb">Breadcrumb</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#buttons-group">Button Group</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#cards">Cards</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#carousel">Carousel</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#collapse">Collapse</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#dropdowns">Dropdowns</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#forms">Forms</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#input-group">Input Group</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#jumbotron">Jumbotron</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#list-group">List Group</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#media-object">Media Object</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#modal">Modal</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#navs">Navs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#navbar">Navbar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#pagination">Pagination</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#popovers">Popovers</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#progress">Progress</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#toast">Toast</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#tooltip">Tooltip</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="col-md-10 pt-4 pb-4 py-md-3 pl-md-5 bd-content">
+
+            <div id="quick-start">
+                <h2 class="mb-4">Quick start</h2>
+                <p>پروژه Bootstrap RTL نمونه ساده‌ای برای RTL کردن فریمورک Bootstrap CSS هست.</p>
+                <p>برای استفاده از Bootstrap RTL نیاز است فایلهای CSS و JS فریمورک Bootstrap را در صفحه وب فراخوانی
+                    کنید. نمونه:</p>
+                <pre class="prettyprint" style="direction: ltr; text-align: left">
+&#x3C;!doctype html&#x3E;
+&#x3C;html dir=&#x22;rtl&#x22; lang=&#x22;fa&#x22;&#x3E;
+&#x3C;head&#x3E;
+    &#x3C;meta charset=&#x22;UTF-8&#x22;&#x3E;
+    &#x3C;meta name=&#x22;viewport&#x22;
+          content=&#x22;width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0&#x22;&#x3E;
+    &#x3C;meta http-equiv=&#x22;X-UA-Compatible&#x22; content=&#x22;ie=edge&#x22;&#x3E;
+    &#x3C;title&#x3E;Bootstrap RTL&#x3C;/title&#x3E;
+    &#x3C;!-- CSS only --&#x3E;
+    &#x3C;link rel=&#x22;stylesheet&#x22; href=&#x22;https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css&#x22; integrity=&#x22;sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk&#x22; crossorigin=&#x22;anonymous&#x22;&#x3E;
+
+    &#x3C;!-- JS, Popper.js, and jQuery --&#x3E;
+    &#x3C;script src=&#x22;https://code.jquery.com/jquery-3.5.1.slim.min.js&#x22; integrity=&#x22;sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj&#x22; crossorigin=&#x22;anonymous&#x22;&#x3E;&#x3C;/script&#x3E;
+    &#x3C;script src=&#x22;https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js&#x22; integrity=&#x22;sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo&#x22; crossorigin=&#x22;anonymous&#x22;&#x3E;&#x3C;/script&#x3E;
+    &#x3C;script src=&#x22;https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js&#x22; integrity=&#x22;sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI&#x22; crossorigin=&#x22;anonymous&#x22;&#x3E;&#x3C;/script&#x3E;
+
+    &#x3C;link rel=&#x22;stylesheet&#x22; href=&#x22;css/bootstrap-rtl.min.css&#x22;&#x3E;
+&#x3C;/head&#x3E;
+&#x3C;body&#x3E;
+Your Content.
+&#x3C;/body&#x3E;
+&#x3C;/html&#x3E;
+                </pre>
+            </div>
+
+            <div id="alerts">
+                <h2 class="mb-4">Alerts</h2>
+                <div class="alert alert-primary" role="alert">
+                    یک هشدار اولیه ساده - بررسی کنید!
+                </div>
+                <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                    <strong>گواکامول مقدس!</strong> باید برخی از قسمت‌های زیر را بررسی کنید
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+            </div>
+
+            <div id="breadcrumb">
+                <h2 class="mb-4">Breadcrumb</h2>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item active" aria-current="page">خانه</li>
+                    </ol>
+                </nav>
+
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">خانه</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">کتابخانه</li>
+                    </ol>
+                </nav>
+
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">خانه</a></li>
+                        <li class="breadcrumb-item"><a href="#">کتابخانه</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">داده</li>
+                    </ol>
+                </nav>
+            </div>
+
+            <div id="buttons-group">
+                <h2 class="mb-4">Button Group</h2>
+                <div class="btn-group btn-group-toggle mb-3" data-toggle="buttons">
+                    <label class="btn btn-secondary active">
+                        <input type="radio" name="options" id="option1" checked> فعال
+                    </label>
+                    <label class="btn btn-secondary">
+                        <input type="radio" name="options" id="option2"> رادیو
+                    </label>
+                    <label class="btn btn-secondary">
+                        <input type="radio" name="options" id="option3"> رادیو
+                    </label>
+                </div>
+                <div class="btn-toolbar mb-3" role="toolbar" aria-label="Toolbar with button groups">
+                    <div class="btn-group ml-2" role="group" aria-label="First group">
+                        <button type="button" class="btn btn-secondary">۱</button>
+                        <button type="button" class="btn btn-secondary">۲</button>
+                        <button type="button" class="btn btn-secondary">۳</button>
+                        <button type="button" class="btn btn-secondary">۴</button>
+                    </div>
+                    <div class="btn-group ml-2" role="group" aria-label="Second group">
+                        <button type="button" class="btn btn-secondary">۵</button>
+                        <button type="button" class="btn btn-secondary">۶</button>
+                        <button type="button" class="btn btn-secondary">۷</button>
+                    </div>
+                    <div class="btn-group" role="group" aria-label="Third group">
+                        <button type="button" class="btn btn-secondary">۸</button>
+                    </div>
+                </div>
+
+                <div class="btn-toolbar justify-content-between mb-3" role="toolbar"
+                     aria-label="Toolbar with button groups">
+                    <div class="btn-group" role="group" aria-label="First group">
+                        <button type="button" class="btn btn-secondary">۱</button>
+                        <button type="button" class="btn btn-secondary">۲</button>
+                        <button type="button" class="btn btn-secondary">۳</button>
+                        <button type="button" class="btn btn-secondary">۴</button>
+                    </div>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text" id="btnGroupAddon2">@</div>
+                        </div>
+                        <input type="text" class="form-control" placeholder="نمونه جعبه گروهی"
+                               aria-label="Input group example" aria-describedby="btnGroupAddon2">
+                    </div>
+                </div>
+                <div class="btn-group mb-3" role="group" aria-label="Button group with nested dropdown">
+                    <button type="button" class="btn btn-secondary">1</button>
+                    <button type="button" class="btn btn-secondary">2</button>
+
+                    <div class="btn-group" role="group">
+                        <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            فهرست
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                            <a class="dropdown-item" href="#">اول</a>
+                            <a class="dropdown-item" href="#">گزینه دوم</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="cards">
+                <h2 class="mb-4">Cards</h2>
+                <div class="card mb-3" style="width: 18rem;">
+                    <svg class="bd-placeholder-img card-img-top" width="100%" height="180"
+                         xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false"
+                         role="img" aria-label="Placeholder: Image cap"><title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="#868e96"></rect>
+                        <text x="50%" y="50%" fill="#dee2e6" dy=".3em">تصویر نمونه</text>
+                    </svg>
+                    <div class="card-body">
+                        <h5 class="card-title">عنوان کارت</h5>
+                        <p class="card-text">برخی از متن های نمونه سریع برای ساختن عنوان کارت و تشکیل بخش عمده ای از
+                            محتوای کارت.</p>
+                        <a href="#" class="btn btn-primary">ادامه</a>
+                    </div>
+                </div>
+
+                <div class="card mb-3" style="width: 18rem;">
+                    <div class="card-header">
+                        ویژگی‌ها
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">راست‌چین</li>
+                        <li class="list-group-item">با حجم کم</li>
+                        <li class="list-group-item">ساده</li>
+                    </ul>
+                </div>
+
+                <div class="card mb-3">
+                    <div class="card-header">
+                        ویژگی‌ها
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">عنوان کارت</h5>
+                        <p class="card-text">توضیحات اضافه کارت</p>
+                        <a href="#" class="btn btn-primary">بیا اینجا</a>
+                    </div>
+                </div>
+
+                <div class="card mb-3" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Special title treatment</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+
+                <div class="card text-center mb-3" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Special title treatment</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+
+                <div class="card text-left mb-3" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Special title treatment</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="carousel">
+                <h2 class="mb-4">Carousel</h2>
+                <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400"
+                                 xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice"
+                                 focusable="false" role="img" aria-label="Placeholder: First slide"><title>
+                                Placeholder</title>
+                                <rect width="100%" height="100%" fill="#777"></rect>
+                                <text x="50%" y="50%" fill="#555" dy=".3em">اسلاید اول</text>
+                            </svg>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>عنوان اسلاید اول</h5>
+                                <p>توضیح اسلاید اول</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400"
+                                 xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice"
+                                 focusable="false" role="img" aria-label="Placeholder: Second slide"><title>
+                                Placeholder</title>
+                                <rect width="100%" height="100%" fill="#666"></rect>
+                                <text x="50%" y="50%" fill="#444" dy=".3em">اسلاید دوم</text>
+                            </svg>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>عنوان اسلاید دوم</h5>
+                                <p>توضیح اسلاید دوم</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400"
+                                 xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice"
+                                 focusable="false" role="img" aria-label="Placeholder: Third slide"><title>
+                                Placeholder</title>
+                                <rect width="100%" height="100%" fill="#555"></rect>
+                                <text x="50%" y="50%" fill="#333" dy=".3em">اسلاید سوم</text>
+                            </svg>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>عنوان اسلاید سوم</h5>
+                                <p>توضیح اسلاید سوم</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+
+            <div id="collapse">
+                <h2 class="mb-4">Collapse</h2>
+                <div class="accordion" id="accordionExample">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse"
+                                        data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    پیش ساخته گروه مورد # 1
+                                </button>
+                            </h2>
+                        </div>
+
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                             data-parent="#accordionExample">
+                            <div class="card-body">
+                                توضیحات آیتم اول
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                        data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    پیش ساخته گروه مورد # 2
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                             data-parent="#accordionExample">
+                            <div class="card-body">
+                                توضیحات آیتم اول
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingThree">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                        data-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                    پیش ساخته گروه مورد # 3
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                             data-parent="#accordionExample">
+                            <div class="card-body">
+                                توضیحات آیتم اول
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="dropdowns">
+                <h2 class="mb-4">Dropdowns</h2>
+                <!-- Example single danger button -->
+                <div class="btn-group">
+                    <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                        دستور
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">اول</a>
+                        <a class="dropdown-item" href="#">دستور دیگر</a>
+                        <a class="dropdown-item" href="#">یه چیز دیگه</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">لینک جدا</a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="forms">
+                <h2 class="mb-4">Forms</h2>
+                <div class="mb-3">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="inputEmail4">ایمیل</label>
+                                <input type="email" class="form-control" id="inputEmail4">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="inputPassword4">رمزعبور</label>
+                                <input type="password" class="form-control" id="inputPassword4">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputAddress">نشانی</label>
+                            <input type="text" class="form-control" id="inputAddress" placeholder="۲۳۴ خیابان اصلی">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputAddress2">نشانی ۲</label>
+                            <input type="text" class="form-control" id="inputAddress2" placeholder="تهران، استدیو وب">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="inputCity">شهر</label>
+                                <input type="text" class="form-control" id="inputCity">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="inputState">استان</label>
+                                <select id="inputState" class="form-control">
+                                    <option selected>انتخاب...</option>
+                                    <option>...</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-2">
+                                <label for="inputZip">کد پستی</label>
+                                <input type="text" class="form-control" id="inputZip">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                <label class="form-check-label" for="gridCheck">
+                                    قوانین را قبول دارم
+                                </label>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">ثبت</button>
+                    </form>
+                </div>
+                <div class="mb-3">
+                    <form>
+                        <div class="form-row align-items-center">
+                            <div class="col-sm-3 my-1">
+                                <label class="sr-only" for="inlineFormInputName">نام</label>
+                                <input type="text" class="form-control" id="inlineFormInputName"
+                                       placeholder="پارسا کافی">
+                            </div>
+                            <div class="col-sm-3 my-1">
+                                <label class="sr-only" for="inlineFormInputGroupUsername">Username</label>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text">@</div>
+                                    </div>
+                                    <input type="text" class="form-control" id="inlineFormInputGroupUsername"
+                                           placeholder="نام کاربری">
+                                </div>
+                            </div>
+                            <div class="col-auto my-1">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="autoSizingCheck2">
+                                    <label class="form-check-label" for="autoSizingCheck2">
+                                        به خاطر بسپار
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-auto my-1">
+                                <button type="submit" class="btn btn-primary">ثبت</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="mb-3">
+                    <form>
+                        <div class="form-row align-items-center">
+                            <div class="col-auto my-1">
+                                <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
+                                <select class="custom-select ml-sm-2" id="inlineFormCustomSelect">
+                                    <option selected>انتخاب...</option>
+                                    <option value="1">یک</option>
+                                    <option value="2">دو</option>
+                                    <option value="3">سه</option>
+                                </select>
+                            </div>
+                            <div class="col-auto my-1">
+                                <div class="custom-control custom-checkbox ml-sm-2">
+                                    <input type="checkbox" class="custom-control-input" id="customControlAutosizing">
+                                    <label class="custom-control-label" for="customControlAutosizing">ذخیره تنظیمات
+                                        من</label>
+                                </div>
+                            </div>
+                            <div class="col-auto my-1">
+                                <button type="submit" class="btn btn-primary">ثبت</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="mb-3">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
+                               value="option1" checked>
+                        <label class="form-check-label" for="exampleRadios1">
+                            انتخاب پیشفرض
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2"
+                               value="option2">
+                        <label class="form-check-label" for="exampleRadios2">
+                            کلید رادیو دوم
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3"
+                               value="option3" disabled>
+                        <label class="form-check-label" for="exampleRadios3">
+                            غیرفعال
+                        </label>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                        <label class="form-check-label" for="inlineCheckbox1">1</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                        <label class="form-check-label" for="inlineCheckbox2">2</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" disabled>
+                        <label class="form-check-label" for="inlineCheckbox3">3 (غیرفعال)</label>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <form>
+                        <div class="form-row">
+                            <div class="col-md-4 mb-3">
+                                <label for="validationServer01">نام</label>
+                                <input type="text" class="form-control is-valid" id="validationServer01" value=""
+                                       required>
+                                <div class="valid-feedback">
+                                    خیلی خوبه
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label for="validationServer02">نام خانوادگی</label>
+                                <input type="text" class="form-control is-valid" id="validationServer02" value=""
+                                       required>
+                                <div class="valid-feedback">
+                                    خیلی خوبه
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label for="validationServerUsername">نام کاربری</label>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="inputGroupPrepend3">@</span>
+                                    </div>
+                                    <input type="text" class="form-control is-invalid" id="validationServerUsername"
+                                           aria-describedby="inputGroupPrepend3" required>
+                                    <div class="invalid-feedback">
+                                        لطفا نام کاربری را انتخاب کنید
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-md-6 mb-3">
+                                <label for="validationServer03">شهر</label>
+                                <input type="text" class="form-control is-invalid" id="validationServer03" required>
+                                <div class="invalid-feedback">
+                                    نام شهر معتبر نیست
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <label for="validationServer04">استان</label>
+                                <select class="custom-select is-invalid" id="validationServer04" required>
+                                    <option selected disabled value="">انتخاب...</option>
+                                    <option>...</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    لطفا استانی معتبر انتخاب کنید
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <label for="validationServer05">کد پستی</label>
+                                <input type="text" class="form-control is-invalid" id="validationServer05" required>
+                                <div class="invalid-feedback">
+                                    کد پستی معتبری وارد کنید
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3"
+                                       required>
+                                <label class="form-check-label" for="invalidCheck3">
+                                    با قوانین موافقم
+                                </label>
+                                <div class="invalid-feedback">
+                                    قبل از ثبت فرم نیاز هست با پذیرش قوانین موافقت کنید
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary" type="submit">ثبت فرم</button>
+                    </form>
+                </div>
+
+                <div class="mb-3">
+                    <form class="was-validated">
+                        <div class="mb-3">
+                            <label for="validationTextarea">Textarea</label>
+                            <textarea class="form-control is-invalid" id="validationTextarea"
+                                      placeholder="Required example textarea" required></textarea>
+                            <div class="invalid-feedback">
+                                Please enter a message in the textarea.
+                            </div>
+                        </div>
+
+                        <div class="custom-control custom-checkbox mb-3">
+                            <input type="checkbox" class="custom-control-input" id="customControlValidation1" required>
+                            <label class="custom-control-label" for="customControlValidation1">Check this custom
+                                checkbox</label>
+                            <div class="invalid-feedback">Example invalid feedback text</div>
+                        </div>
+
+                        <div class="custom-control custom-radio">
+                            <input type="radio" class="custom-control-input" id="customControlValidation2"
+                                   name="radio-stacked" required>
+                            <label class="custom-control-label" for="customControlValidation2">Toggle this custom
+                                radio</label>
+                        </div>
+                        <div class="custom-control custom-radio mb-3">
+                            <input type="radio" class="custom-control-input" id="customControlValidation3"
+                                   name="radio-stacked" required>
+                            <label class="custom-control-label" for="customControlValidation3">Or toggle this other
+                                custom radio</label>
+                            <div class="invalid-feedback">More example invalid feedback text</div>
+                        </div>
+
+                        <div class="form-group">
+                            <select class="custom-select" required>
+                                <option value="">Open this select menu</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                            <div class="invalid-feedback">Example invalid custom select feedback</div>
+                        </div>
+
+                        <div class="custom-file">
+                            <input type="file" class="custom-file-input" id="validatedCustomFile" required>
+                            <label class="custom-file-label" for="validatedCustomFile">انتخاب فایل...</label>
+                            <div class="invalid-feedback">Example invalid custom file feedback</div>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+
+            <div id="input-group">
+                <h2 class="mb-4">Input Group</h2>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1">@</span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Username" aria-label="Username"
+                           aria-describedby="basic-addon1">
+                </div>
+
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Recipient's username"
+                           aria-label="Recipient's username" aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                        <span class="input-group-text" id="basic-addon2">@example.com</span>
+                    </div>
+                </div>
+
+                <label for="basic-url">Your vanity URL</label>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
+                    </div>
+                    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                </div>
+
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">$</span>
+                    </div>
+                    <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                    <div class="input-group-append">
+                        <span class="input-group-text">.00</span>
+                    </div>
+                </div>
+
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">With textarea</span>
+                    </div>
+                    <textarea class="form-control" aria-label="With textarea"></textarea>
+                </div>
+
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <button class="btn btn-outline-secondary" type="button" id="button-addon1">Button</button>
+                    </div>
+                    <input type="text" class="form-control" placeholder="" aria-label="Example text with button addon"
+                           aria-describedby="button-addon1">
+                </div>
+
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Recipient's username"
+                           aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-secondary" type="button" id="button-addon2">Button</button>
+                    </div>
+                </div>
+
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend" id="button-addon3">
+                        <button class="btn btn-outline-secondary" type="button">Button</button>
+                        <button class="btn btn-outline-secondary" type="button">Button</button>
+                    </div>
+                    <input type="text" class="form-control" placeholder=""
+                           aria-label="Example text with two button addons" aria-describedby="button-addon3">
+                </div>
+
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Recipient's username"
+                           aria-label="Recipient's username with two button addons" aria-describedby="button-addon4">
+                    <div class="input-group-append" id="button-addon4">
+                        <button class="btn btn-outline-secondary" type="button">Button</button>
+                        <button class="btn btn-outline-secondary" type="button">Button</button>
+                    </div>
+                </div>
+
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">Dropdown
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                            <div role="separator" class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Separated link</a>
+                        </div>
+                    </div>
+                    <input type="text" class="form-control" aria-label="Text input with dropdown button">
+                </div>
+
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" aria-label="Text input with dropdown button">
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">Dropdown
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                            <div role="separator" class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Separated link</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <button type="button" class="btn btn-outline-secondary">Action</button>
+                        <button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="sr-only">Toggle Dropdown</span>
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                            <div role="separator" class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Separated link</a>
+                        </div>
+                    </div>
+                    <input type="text" class="form-control" aria-label="Text input with segmented dropdown button">
+                </div>
+
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" aria-label="Text input with segmented dropdown button">
+                    <div class="input-group-append">
+                        <button type="button" class="btn btn-outline-secondary">Action</button>
+                        <button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="sr-only">Toggle Dropdown</span>
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                            <div role="separator" class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Separated link</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <label class="input-group-text" for="inputGroupSelect01">Options</label>
+                    </div>
+                    <select class="custom-select" id="inputGroupSelect01">
+                        <option selected>انتخاب...</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+
+                <div class="input-group mb-3">
+                    <select class="custom-select" id="inputGroupSelect02">
+                        <option selected>انتخاب...</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                    <div class="input-group-append">
+                        <label class="input-group-text" for="inputGroupSelect02">Options</label>
+                    </div>
+                </div>
+
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <button class="btn btn-outline-secondary" type="button">Button</button>
+                    </div>
+                    <select class="custom-select" id="inputGroupSelect03" aria-label="Example select with button addon">
+                        <option selected>انتخاب...</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+
+                <div class="input-group mb-3">
+                    <select class="custom-select" id="inputGroupSelect04" aria-label="Example select with button addon">
+                        <option selected>انتخاب...</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-secondary" type="button">Button</button>
+                    </div>
+                </div>
+
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroupFileAddon01">آپلود</span>
+                    </div>
+                    <div class="custom-file">
+                        <input type="file" class="custom-file-input" id="inputGroupFile01"
+                               aria-describedby="inputGroupFileAddon01">
+                        <label class="custom-file-label" for="inputGroupFile01">انتخاب فایل</label>
+                    </div>
+                </div>
+
+                <div class="input-group mb-3">
+                    <div class="custom-file">
+                        <input type="file" class="custom-file-input" id="inputGroupFile02">
+                        <label class="custom-file-label" for="inputGroupFile02"
+                               aria-describedby="inputGroupFileAddon02">انتخاب
+                            فایل</label>
+                    </div>
+                    <div class="input-group-append">
+                        <span class="input-group-text" id="inputGroupFileAddon02">آپلود</span>
+                    </div>
+                </div>
+
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon03">کلید</button>
+                    </div>
+                    <div class="custom-file">
+                        <input type="file" class="custom-file-input" id="inputGroupFile03"
+                               aria-describedby="inputGroupFileAddon03">
+                        <label class="custom-file-label" for="inputGroupFile03">انتخاب فایل</label>
+                    </div>
+                </div>
+
+                <div class="input-group mb-3">
+                    <div class="custom-file">
+                        <input type="file" class="custom-file-input" id="inputGroupFile04"
+                               aria-describedby="inputGroupFileAddon04">
+                        <label class="custom-file-label" for="inputGroupFile04">انتخاب فایل</label>
+                    </div>
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04">کلید</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="jumbotron">
+                <h2 class="mb-4">Jumbotron</h2>
+                <div class="jumbotron">
+                    <h1 class="display-4">سلام، جهان!</h1>
+                    <p class="lead">این یک واحد قهرمان ساده است ، یک جزء ساده به سبک jumbotron برای جلب توجه بیشتر به
+                        مطالب یا اطلاعات برجسته.</p>
+                    <hr class="my-4">
+                    <p>از کلاسهای ابزار برای تایپوگرافی و فاصله برای محتوای فضا در داخل ظرف بزرگتر استفاده می کند.</p>
+                    <a class="btn btn-primary btn-lg" href="#" role="button">بیشتر بیاموزید</a>
+                </div>
+            </div>
+
+            <div id="list-group">
+                <h2 class="mb-4">List Group</h2>
+                <ul class="list-group list-group-horizontal-lg mb-3">
+                    <li class="list-group-item">یک</li>
+                    <li class="list-group-item">دو</li>
+                    <li class="list-group-item">سه</li>
+                </ul>
+
+                <ul class="list-group mb-3">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Cras justo odio
+                        <span class="badge badge-primary badge-pill">14</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Dapibus ac facilisis in
+                        <span class="badge badge-primary badge-pill">2</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Morbi leo risus
+                        <span class="badge badge-primary badge-pill">1</span>
+                    </li>
+                </ul>
+
+                <div class="row">
+                    <div class="col-4">
+                        <div class="list-group" id="list-tab" role="tablist">
+                            <a class="list-group-item list-group-item-action active" id="list-home-list"
+                               data-toggle="list" href="#list-home" role="tab" aria-controls="home">Home</a>
+                            <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list"
+                               href="#list-profile" role="tab" aria-controls="profile">Profile</a>
+                            <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list"
+                               href="#list-messages" role="tab" aria-controls="messages">Messages</a>
+                            <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list"
+                               href="#list-settings" role="tab" aria-controls="settings">Settings</a>
+                        </div>
+                    </div>
+                    <div class="col-8">
+                        <div class="tab-content" id="nav-tabContent">
+                            <div class="tab-pane fade show active" id="list-home" role="tabpanel"
+                                 aria-labelledby="list-home-list">Home...
+                            </div>
+                            <div class="tab-pane fade" id="list-profile" role="tabpanel"
+                                 aria-labelledby="list-profile-list">Profile...
+                            </div>
+                            <div class="tab-pane fade" id="list-messages" role="tabpanel"
+                                 aria-labelledby="list-messages-list">Messages...
+                            </div>
+                            <div class="tab-pane fade" id="list-settings" role="tabpanel"
+                                 aria-labelledby="list-settings-list">Settings...
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="media-object">
+                <h2 class="mb-4">Media Object</h2>
+                <ul class="list-unstyled">
+                    <li class="media">
+                        <svg class="bd-placeholder-img ml-3" width="64" height="64" xmlns="http://www.w3.org/2000/svg"
+                             preserveAspectRatio="xMidYMid slice" focusable="false" role="img"
+                             aria-label="Placeholder: 64x64"><title>Placeholder</title>
+                            <rect width="100%" height="100%" fill="#868e96"></rect>
+                            <text x="50%" y="50%" fill="#dee2e6" dy=".3em">64x64</text>
+                        </svg>
+                        <div class="media-body">
+                            <h5 class="mt-0 mb-1">List-based media object</h5>
+                            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.
+                            Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc
+                            ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                        </div>
+                    </li>
+                    <li class="media my-4">
+                        <svg class="bd-placeholder-img ml-3" width="64" height="64" xmlns="http://www.w3.org/2000/svg"
+                             preserveAspectRatio="xMidYMid slice" focusable="false" role="img"
+                             aria-label="Placeholder: 64x64"><title>Placeholder</title>
+                            <rect width="100%" height="100%" fill="#868e96"></rect>
+                            <text x="50%" y="50%" fill="#dee2e6" dy=".3em">64x64</text>
+                        </svg>
+                        <div class="media-body">
+                            <h5 class="mt-0 mb-1">List-based media object</h5>
+                            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.
+                            Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc
+                            ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                        </div>
+                    </li>
+                    <li class="media">
+                        <svg class="bd-placeholder-img ml-3" width="64" height="64" xmlns="http://www.w3.org/2000/svg"
+                             preserveAspectRatio="xMidYMid slice" focusable="false" role="img"
+                             aria-label="Placeholder: 64x64"><title>Placeholder</title>
+                            <rect width="100%" height="100%" fill="#868e96"></rect>
+                            <text x="50%" y="50%" fill="#dee2e6" dy=".3em">64x64</text>
+                        </svg>
+                        <div class="media-body">
+                            <h5 class="mt-0 mb-1">List-based media object</h5>
+                            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.
+                            Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc
+                            ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="modal">
+                <h2 class="mb-4">Modal</h2>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                    نمایش Modal
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+                     aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalCenterTitle">عنوان Modal</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                محتوای Modal
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary">ذخیره تغییرات</button>
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">خروج</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="navs">
+                <h2 class="mb-4">Navs</h2>
+                <div class="mb-3">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"
+                               aria-controls="home" aria-selected="true">خانه</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+                               aria-controls="profile" aria-selected="false">پروفایل</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab"
+                               aria-controls="contact" aria-selected="false">تماس</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content p-3" id="myTabContent">
+                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                            چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
+                            تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در
+                            شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها
+                            شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی
+                            ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط
+                            سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته
+                            اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+                        </div>
+                        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                            چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
+                            تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در
+                            شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها
+                            شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی.
+                        </div>
+                        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                            چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
+                            تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در
+                            شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها
+                            شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی
+                            ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط
+                            سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته
+                            اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home"
+                               role="tab" aria-controls="pills-home" aria-selected="true">خانه</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile"
+                               role="tab" aria-controls="pills-profile" aria-selected="false">پروفایل</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact"
+                               role="tab" aria-controls="pills-contact" aria-selected="false">تماس</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                             aria-labelledby="pills-home-tab">
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                            چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
+                        </div>
+                        <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                             aria-labelledby="pills-profile-tab">
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                            چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
+                        </div>
+                        <div class="tab-pane fade" id="pills-contact" role="tabpanel"
+                             aria-labelledby="pills-contact-tab">
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                            چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist"
+                                 aria-orientation="vertical">
+                                <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home"
+                                   role="tab" aria-controls="v-pills-home" aria-selected="true">خانه</a>
+                                <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile"
+                                   role="tab" aria-controls="v-pills-profile" aria-selected="false">پروفایل</a>
+                                <a class="nav-link d-flex justify-content-between align-items-center"
+                                   id="v-pills-messages-tab" data-toggle="pill"
+                                   href="#v-pills-messages" role="tab" aria-controls="v-pills-messages"
+                                   aria-selected="false">پیام‌ها <span class="badge badge-warning badge-pill">14</span></a>
+                                <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill"
+                                   href="#v-pills-settings" role="tab" aria-controls="v-pills-settings"
+                                   aria-selected="false">تنظیمات</a>
+                            </div>
+                        </div>
+                        <div class="col-9">
+                            <div class="tab-content" id="v-pills-tabContent">
+                                <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
+                                     aria-labelledby="v-pills-home-tab">
+                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+                                    گرافیک است.
+                                    چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
+                                </div>
+                                <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
+                                     aria-labelledby="v-pills-profile-tab">
+                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+                                    گرافیک است.
+                                    چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
+                                </div>
+                                <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
+                                     aria-labelledby="v-pills-messages-tab">
+                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+                                    گرافیک است.
+                                    چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
+                                </div>
+                                <div class="tab-pane fade" id="v-pills-settings" role="tabpanel"
+                                     aria-labelledby="v-pills-settings-tab">
+                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+                                    گرافیک است.
+                                    چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="navbar">
+                <h2 class="mb-4">Navbar</h2>
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand" href="#">لوگو</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">خانه <span class="sr-only">(جاری)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">لینک</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    فهرست
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">دستور</a>
+                                    <a class="dropdown-item" href="#">دستوری دیگر</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">گزینه‌ای دیگر</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">غیرفعال</a>
+                            </li>
+                        </ul>
+                        <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control ml-sm-2" type="search" placeholder="جستجو" aria-label="جستجو">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">جستجو</button>
+                        </form>
+                    </div>
+                </nav>
+            </div>
+
+            <div id="pagination">
+                <h2 class="mb-4">Pagination</h2>
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination">
+                        <li class="page-item"><a class="page-link" href="#">قبلی</a></li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">بعدی</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div id="popovers">
+                <h2 class="mb-4">Popovers</h2>
+                <div class="mb-3">
+                    <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover"
+                            data-placement="top"
+                            data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                        Popover بالا
+                    </button>
+
+                    <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover"
+                            data-placement="right"
+                            data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                        Popover راست
+                    </button>
+
+                    <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover"
+                            data-placement="bottom" data-content="Vivamus
+sagittis lacus vel augue laoreet rutrum faucibus.">
+                        Popover پایین
+                    </button>
+
+                    <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover"
+                            data-placement="left"
+                            data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                        Popover چپ
+                    </button>
+                </div>
+                <div class="mb-3">
+                    <a tabindex="0" class="btn btn-lg btn-danger" role="button" data-toggle="popover"
+                       data-trigger="focus" title="عنوان popover"
+                       data-content="و در اینجا نوشته‌ای شگفت‌انگیز است. خیلی جذاب است.">Dismissible
+                        popover</a>
+                </div>
+            </div>
+
+            <div id="progress">
+                <h2 class="mb-4">Progress</h2>
+                <div class="progress mb-2">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0"
+                         aria-valuemax="100"></div>
+                </div>
+                <div class="progress mb-2">
+                    <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0"
+                         aria-valuemax="100"></div>
+                </div>
+                <div class="progress mb-2">
+                    <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0"
+                         aria-valuemax="100"></div>
+                </div>
+                <div class="progress mb-2">
+                    <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0"
+                         aria-valuemax="100"></div>
+                </div>
+                <div class="progress mb-2">
+                    <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100"
+                         aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <div class="progress mb-2">
+                    <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25"
+                         aria-valuemin="0" aria-valuemax="100">25%
+                    </div>
+                </div>
+                <div class="progress mb-2">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25"
+                         aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <div class="progress mb-2">
+                    <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50"
+                         aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <div class="progress mb-2">
+                    <div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75"
+                         aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <div class="progress mb-2">
+                    <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100"
+                         aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <div class="progress mb-2">
+                    <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0"
+                         aria-valuemax="100"></div>
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 30%" aria-valuenow="30"
+                         aria-valuemin="0" aria-valuemax="100"></div>
+                    <div class="progress-bar bg-info" role="progressbar" style="width: 20%" aria-valuenow="20"
+                         aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <div class="progress mb-2">
+                    <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 10%"
+                         aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <div class="progress mb-2">
+                    <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 25%"
+                         aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <div class="progress mb-2">
+                    <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 50%"
+                         aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <div class="progress mb-2">
+                    <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 75%"
+                         aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <div class="progress mb-2">
+                    <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 100%"
+                         aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <div class="progress mb-2">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                         aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+                </div>
+            </div>
+
+            <div id="toast">
+                <h2 class="mb-4">Toast</h2>
+                <button class="display-toast btn btn-primary">نمایش Toast</button>
+                <div style="position: fixed; left: 10px; bottom: 10px;">
+                    <div class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-delay="100000">
+                        <div class="toast-header">
+                            <svg class="bd-placeholder-img rounded ml-2" width="20" height="20"
+                                 xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice"
+                                 focusable="false"
+                                 role="img">
+                                <rect width="100%" height="100%" fill="#007aff"></rect>
+                            </svg>
+                            <strong class="ml-auto">بوت‌استرپ</strong>
+                            <small>۱۱ دقیقه پیش</small>
+                            <button type="button" class="mr-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="toast-body">
+                            سلام، جهان! این یک پیام شناور است.
+                        </div>
+                    </div>
+
+                    <div class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-delay="13000">
+                        <div class="toast-header">
+                            <svg class="bd-placeholder-img rounded ml-2" width="20" height="20"
+                                 xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice"
+                                 focusable="false"
+                                 role="img">
+                                <rect width="100%" height="100%" fill="#563d7c"></rect>
+                            </svg>
+                            <strong class="ml-auto">بوت‌استرپ</strong>
+                            <small class="text-muted">الان</small>
+                            <button type="button" class="mr-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="toast-body">
+                            دیدید؟ دقیقا به این شکل.
+                        </div>
+                    </div>
+
+                    <div class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-delay="20000">
+                        <div class="toast-header">
+                            <svg class="bd-placeholder-img rounded ml-2" width="20" height="20"
+                                 xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice"
+                                 focusable="false"
+                                 role="img">
+                                <rect width="100%" height="100%" fill="#12a73f"></rect>
+                            </svg>
+                            <strong class="ml-auto">بوت‌استرپ</strong>
+                            <small class="text-muted">۲ ثانیه پیش</small>
+                            <button type="button" class="mr-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="toast-body">
+                            زیاد شد
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="tooltip">
+                <h2 class="mb-4">Tooltip</h2>
+                <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top"
+                        title="Tooltip on top">
+                    Tooltip on top
+                </button>
+                <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="right"
+                        title="Tooltip on right">
+                    Tooltip on right
+                </button>
+                <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom"
+                        title="Tooltip on bottom">
+                    Tooltip on bottom
+                </button>
+                <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="left"
+                        title="Tooltip on left">
+                    Tooltip on left
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('[data-toggle="popover"]').popover();
+        $('[data-toggle="tooltip"]').tooltip();
+
+        $('.display-toast').on('click', function () {
+            $('.toast').toast('show');
+        });
+
+        $('a[href="#"]').on('click', function (e) {
+            e.preventDefault();
+        });
+    })
+</script>
+</body>
+</html>

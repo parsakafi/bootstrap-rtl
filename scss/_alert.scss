@@ -1,0 +1,9 @@
+.alert-dismissible {
+  padding-right: $alert-padding-x;
+  padding-left: $close-font-size + $alert-padding-x * 2;
+
+  .close {
+    right: auto;
+    left: 0;
+  }
+}

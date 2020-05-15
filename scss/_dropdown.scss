@@ -1,0 +1,13 @@
+.dropdown-menu {
+  text-align: right;
+}
+
+.dropdown-toggle{
+  /* display: flex;
+  align-items: center; */
+
+  &::after {
+    margin-right: $caret-spacing;
+    margin-left: 0;
+  }
+}

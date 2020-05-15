@@ -1,0 +1,22 @@
+.btn-group {
+  > .btn:last-child,
+  > .btn-group:last-child > .btn {
+    border-top-left-radius: $border-radius;
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+    border-bottom-left-radius: $border-radius;
+  }
+
+  > .btn:first-child,
+  > .btn-group:first-child > .btn {
+    border-top-left-radius: 0;
+    border-top-right-radius: $border-radius !important;
+    border-bottom-right-radius: $border-radius !important;
+    border-bottom-left-radius: 0;
+  }
+
+  > .btn:first-child:first-of-type:last-of-type,
+  > .btn-group:first-child:last-child > .btn {
+    border-radius: $border-radius;
+  }
+}
