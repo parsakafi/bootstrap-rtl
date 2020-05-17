@@ -4,6 +4,11 @@
  * Copyright 2020 Parsa Kafi (https://parsa.ws)
  * Licensed under MIT (https://github.com/parsakafi/bootstrap-rtl/blob/master/LICENSE)
  */
+body {
+  text-align: right;
+  direction: rtl;
+}
+
 .list-unstyled {
   padding-right: 0;
 }

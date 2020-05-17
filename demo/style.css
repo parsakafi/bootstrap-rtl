@@ -1,12 +1,9 @@
-@charset "UTF-8";
 body {
-  direction: rtl;
-  text-align: right;
   position: relative;
   overflow-y: scroll;
 }
 
-bodyو option {
+body, option {
   font-family: Vazir, sans-serif;
 }
 
@@ -73,7 +70,6 @@ bodyو option {
 }
 
 .card-img, .card-img-bottom, .card-img-top {
-  -ms-flex-negative: 0;
   flex-shrink: 0;
   width: 100%;
 }
