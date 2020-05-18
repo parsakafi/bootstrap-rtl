@@ -166,12 +166,9 @@ textarea.form-control.is-valid {
 }
 
 .dropdown-menu {
+  right: 0 !important;
+  left: auto !important;
   text-align: right;
-}
-
-.dropdown-toggle {
-  /* display: flex;
-  align-items: center; */
 }
 
 .dropdown-toggle::after {

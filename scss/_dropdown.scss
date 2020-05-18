@@ -1,13 +1,14 @@
-.dropdown-menu {
-  text-align: right;
-}
+.dropdown {
+  &-menu {
+    right: 0 !important;
+    left: auto !important;
+    text-align: right;
+  }
 
-.dropdown-toggle{
-  /* display: flex;
-  align-items: center; */
-
-  &::after {
-    margin-right: $caret-spacing;
-    margin-left: 0;
+  &-toggle {
+    &::after {
+      margin-right: $caret-spacing;
+      margin-left: 0;
+    }
   }
 }
