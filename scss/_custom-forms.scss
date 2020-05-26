@@ -16,9 +16,9 @@
   }
 }
 
-.cus3tom-select {
-  padding: $form-select-padding-y $form-select-padding-x $form-select-padding-y ($form-select-padding-x + $form-select-indicator-padding);
-  background-position: left $form-select-padding-x center;
+.custom-select {
+  padding: $custom-select-padding-y $custom-select-padding-x $custom-select-padding-y ($custom-select-padding-x + $custom-select-indicator-padding);
+  background-position: left $custom-select-padding-x center;
 }
 
 .custom-file-label::after {
