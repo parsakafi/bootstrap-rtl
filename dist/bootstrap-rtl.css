@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*!
- * Bootstrap RTL v1.0.0 (https://github.com/parsakafi/bootstrap-rtl)
+ * Bootstrap RTL v1.2.0 (https://github.com/parsakafi/bootstrap-rtl)
  * Copyright 2020 Parsa Kafi (https://parsa.ws)
  * Licensed under MIT (https://github.com/parsakafi/bootstrap-rtl/blob/master/LICENSE)
  */
@@ -401,5 +401,9 @@ textarea.form-control.is-valid {
 .carousel-control-next-icon,
 .carousel-control-prev-icon {
   transform: rotate(180deg);
+}
+
+.carousel-indicators {
+  padding-right: 0;
 }
 /*# sourceMappingURL=bootstrap-rtl.css.map */

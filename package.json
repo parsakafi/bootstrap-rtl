@@ -1,7 +1,7 @@
 {
   "name": "bootstrap-rtl",
   "description": "Easy way to made RTL Bootstrap framework",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "homepage": "https://github.com/parsakafi/bootstrap-rtl",
   "author": "Parsa Kafi (https://parsa.ws)",
   "scripts": {
