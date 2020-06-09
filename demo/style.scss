@@ -77,3 +77,16 @@ body, option {
   flex-shrink: 0;
   width: 100%;
 }
+
+.bd-example-row {
+  .row + .row {
+    margin-top: 1rem;
+  }
+
+  .row > .col, .row > [class^="col-"] {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    background-color: rgba(86, 61, 123, 0.15);
+    border: 1px solid rgba(86, 61, 123, 0.2);
+  }
+}

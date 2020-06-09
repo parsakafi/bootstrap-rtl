@@ -9,6 +9,265 @@ body {
   direction: rtl;
 }
 
+.offset-1 {
+  margin-right: 8.333333%;
+  margin-left: inherit;
+}
+
+.offset-2 {
+  margin-right: 16.666667%;
+  margin-left: inherit;
+}
+
+.offset-3 {
+  margin-right: 25%;
+  margin-left: inherit;
+}
+
+.offset-4 {
+  margin-right: 33.333333%;
+  margin-left: inherit;
+}
+
+.offset-5 {
+  margin-right: 41.666667%;
+  margin-left: inherit;
+}
+
+.offset-6 {
+  margin-right: 50%;
+  margin-left: inherit;
+}
+
+.offset-7 {
+  margin-right: 58.333333%;
+  margin-left: inherit;
+}
+
+.offset-8 {
+  margin-right: 66.666667%;
+  margin-left: inherit;
+}
+
+.offset-9 {
+  margin-right: 75%;
+  margin-left: inherit;
+}
+
+.offset-10 {
+  margin-right: 83.333333%;
+  margin-left: inherit;
+}
+
+.offset-11 {
+  margin-right: 91.666667%;
+  margin-left: inherit;
+}
+
+@media (min-width: 576px) {
+  .offset-sm-0 {
+    margin-right: 0;
+    margin-left: inherit;
+  }
+  .offset-sm-1 {
+    margin-right: 8.333333%;
+    margin-left: inherit;
+  }
+  .offset-sm-2 {
+    margin-right: 16.666667%;
+    margin-left: inherit;
+  }
+  .offset-sm-3 {
+    margin-right: 25%;
+    margin-left: inherit;
+  }
+  .offset-sm-4 {
+    margin-right: 33.333333%;
+    margin-left: inherit;
+  }
+  .offset-sm-5 {
+    margin-right: 41.666667%;
+    margin-left: inherit;
+  }
+  .offset-sm-6 {
+    margin-right: 50%;
+    margin-left: inherit;
+  }
+  .offset-sm-7 {
+    margin-right: 58.333333%;
+    margin-left: inherit;
+  }
+  .offset-sm-8 {
+    margin-right: 66.666667%;
+    margin-left: inherit;
+  }
+  .offset-sm-9 {
+    margin-right: 75%;
+    margin-left: inherit;
+  }
+  .offset-sm-10 {
+    margin-right: 83.333333%;
+    margin-left: inherit;
+  }
+  .offset-sm-11 {
+    margin-right: 91.666667%;
+    margin-left: inherit;
+  }
+}
+
+@media (min-width: 768px) {
+  .offset-md-0 {
+    margin-right: 0;
+    margin-left: inherit;
+  }
+  .offset-md-1 {
+    margin-right: 8.333333%;
+    margin-left: inherit;
+  }
+  .offset-md-2 {
+    margin-right: 16.666667%;
+    margin-left: inherit;
+  }
+  .offset-md-3 {
+    margin-right: 25%;
+    margin-left: inherit;
+  }
+  .offset-md-4 {
+    margin-right: 33.333333%;
+    margin-left: inherit;
+  }
+  .offset-md-5 {
+    margin-right: 41.666667%;
+    margin-left: inherit;
+  }
+  .offset-md-6 {
+    margin-right: 50%;
+    margin-left: inherit;
+  }
+  .offset-md-7 {
+    margin-right: 58.333333%;
+    margin-left: inherit;
+  }
+  .offset-md-8 {
+    margin-right: 66.666667%;
+    margin-left: inherit;
+  }
+  .offset-md-9 {
+    margin-right: 75%;
+    margin-left: inherit;
+  }
+  .offset-md-10 {
+    margin-right: 83.333333%;
+    margin-left: inherit;
+  }
+  .offset-md-11 {
+    margin-right: 91.666667%;
+    margin-left: inherit;
+  }
+}
+
+@media (min-width: 992px) {
+  .offset-lg-0 {
+    margin-right: 0;
+    margin-left: inherit;
+  }
+  .offset-lg-1 {
+    margin-right: 8.333333%;
+    margin-left: inherit;
+  }
+  .offset-lg-2 {
+    margin-right: 16.666667%;
+    margin-left: inherit;
+  }
+  .offset-lg-3 {
+    margin-right: 25%;
+    margin-left: inherit;
+  }
+  .offset-lg-4 {
+    margin-right: 33.333333%;
+    margin-left: inherit;
+  }
+  .offset-lg-5 {
+    margin-right: 41.666667%;
+    margin-left: inherit;
+  }
+  .offset-lg-6 {
+    margin-right: 50%;
+    margin-left: inherit;
+  }
+  .offset-lg-7 {
+    margin-right: 58.333333%;
+    margin-left: inherit;
+  }
+  .offset-lg-8 {
+    margin-right: 66.666667%;
+    margin-left: inherit;
+  }
+  .offset-lg-9 {
+    margin-right: 75%;
+    margin-left: inherit;
+  }
+  .offset-lg-10 {
+    margin-right: 83.333333%;
+    margin-left: inherit;
+  }
+  .offset-lg-11 {
+    margin-right: 91.666667%;
+    margin-left: inherit;
+  }
+}
+
+@media (min-width: 1200px) {
+  .offset-xl-0 {
+    margin-right: 0;
+    margin-left: inherit;
+  }
+  .offset-xl-1 {
+    margin-right: 8.333333%;
+    margin-left: inherit;
+  }
+  .offset-xl-2 {
+    margin-right: 16.666667%;
+    margin-left: inherit;
+  }
+  .offset-xl-3 {
+    margin-right: 25%;
+    margin-left: inherit;
+  }
+  .offset-xl-4 {
+    margin-right: 33.333333%;
+    margin-left: inherit;
+  }
+  .offset-xl-5 {
+    margin-right: 41.666667%;
+    margin-left: inherit;
+  }
+  .offset-xl-6 {
+    margin-right: 50%;
+    margin-left: inherit;
+  }
+  .offset-xl-7 {
+    margin-right: 58.333333%;
+    margin-left: inherit;
+  }
+  .offset-xl-8 {
+    margin-right: 66.666667%;
+    margin-left: inherit;
+  }
+  .offset-xl-9 {
+    margin-right: 75%;
+    margin-left: inherit;
+  }
+  .offset-xl-10 {
+    margin-right: 83.333333%;
+    margin-left: inherit;
+  }
+  .offset-xl-11 {
+    margin-right: 91.666667%;
+    margin-left: inherit;
+  }
+}
+
 .list-unstyled {
   padding-right: 0;
 }

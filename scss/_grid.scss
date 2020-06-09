@@ -1,0 +1,31 @@
+// Framework grid generation
+
+
+@mixin make-col-offset-rtl($size, $columns: $grid-columns) {
+  $num: $size / $columns;
+  margin-right: if($num == 0, 0, percentage($num));
+  margin-left: inherit;
+}
+
+@mixin make-grid-columns-rtl($columns: $grid-columns, $gutter: $grid-gutter-width, $breakpoints: $grid-breakpoints) {
+  @each $breakpoint in map-keys($breakpoints) {
+    $infix: breakpoint-infix($breakpoint, $breakpoints);
+
+    @include media-breakpoint-up($breakpoint, $breakpoints) {
+      @if $columns > 0 {
+        // `$columns - 1` because offsetting by the width of an entire row isn't possible
+        @for $i from 0 through ($columns - 1) {
+          @if not ($infix == "" and $i == 0) { // Avoid emitting useless .offset-0
+            .offset#{$infix}-#{$i} {
+              @include make-col-offset-rtl($i, $columns);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@if $enable-grid-classes {
+  @include make-grid-columns-rtl();
+}
