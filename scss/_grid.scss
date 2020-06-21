@@ -4,7 +4,7 @@
 @mixin make-col-offset-rtl($size, $columns: $grid-columns) {
   $num: $size / $columns;
   margin-right: if($num == 0, 0, percentage($num));
-  margin-left: inherit;
+  margin-left: initial;
 }
 
 @mixin make-grid-columns-rtl($columns: $grid-columns, $gutter: $grid-gutter-width, $breakpoints: $grid-breakpoints) {

@@ -11,260 +11,260 @@ body {
 
 .offset-1 {
   margin-right: 8.333333%;
-  margin-left: inherit;
+  margin-left: initial;
 }
 
 .offset-2 {
   margin-right: 16.666667%;
-  margin-left: inherit;
+  margin-left: initial;
 }
 
 .offset-3 {
   margin-right: 25%;
-  margin-left: inherit;
+  margin-left: initial;
 }
 
 .offset-4 {
   margin-right: 33.333333%;
-  margin-left: inherit;
+  margin-left: initial;
 }
 
 .offset-5 {
   margin-right: 41.666667%;
-  margin-left: inherit;
+  margin-left: initial;
 }
 
 .offset-6 {
   margin-right: 50%;
-  margin-left: inherit;
+  margin-left: initial;
 }
 
 .offset-7 {
   margin-right: 58.333333%;
-  margin-left: inherit;
+  margin-left: initial;
 }
 
 .offset-8 {
   margin-right: 66.666667%;
-  margin-left: inherit;
+  margin-left: initial;
 }
 
 .offset-9 {
   margin-right: 75%;
-  margin-left: inherit;
+  margin-left: initial;
 }
 
 .offset-10 {
   margin-right: 83.333333%;
-  margin-left: inherit;
+  margin-left: initial;
 }
 
 .offset-11 {
   margin-right: 91.666667%;
-  margin-left: inherit;
+  margin-left: initial;
 }
 
 @media (min-width: 576px) {
   .offset-sm-0 {
     margin-right: 0;
-    margin-left: inherit;
+    margin-left: initial;
   }
   .offset-sm-1 {
     margin-right: 8.333333%;
-    margin-left: inherit;
+    margin-left: initial;
   }
   .offset-sm-2 {
     margin-right: 16.666667%;
-    margin-left: inherit;
+    margin-left: initial;
   }
   .offset-sm-3 {
     margin-right: 25%;
-    margin-left: inherit;
+    margin-left: initial;
   }
   .offset-sm-4 {
     margin-right: 33.333333%;
-    margin-left: inherit;
+    margin-left: initial;
   }
   .offset-sm-5 {
     margin-right: 41.666667%;
-    margin-left: inherit;
+    margin-left: initial;
   }
   .offset-sm-6 {
     margin-right: 50%;
-    margin-left: inherit;
+    margin-left: initial;
   }
   .offset-sm-7 {
     margin-right: 58.333333%;
-    margin-left: inherit;
+    margin-left: initial;
   }
   .offset-sm-8 {
     margin-right: 66.666667%;
-    margin-left: inherit;
+    margin-left: initial;
   }
   .offset-sm-9 {
     margin-right: 75%;
-    margin-left: inherit;
+    margin-left: initial;
   }
   .offset-sm-10 {
     margin-right: 83.333333%;
-    margin-left: inherit;
+    margin-left: initial;
   }
   .offset-sm-11 {
     margin-right: 91.666667%;
-    margin-left: inherit;
+    margin-left: initial;
   }
 }
 
 @media (min-width: 768px) {
   .offset-md-0 {
     margin-right: 0;
-    margin-left: inherit;
+    margin-left: initial;
   }
   .offset-md-1 {
     margin-right: 8.333333%;
-    margin-left: inherit;
+    margin-left: initial;
   }
   .offset-md-2 {
     margin-right: 16.666667%;
-    margin-left: inherit;
+    margin-left: initial;
   }
   .offset-md-3 {
     margin-right: 25%;
-    margin-left: inherit;
+    margin-left: initial;
   }
   .offset-md-4 {
     margin-right: 33.333333%;
-    margin-left: inherit;
+    margin-left: initial;
   }
   .offset-md-5 {
     margin-right: 41.666667%;
-    margin-left: inherit;
+    margin-left: initial;
   }
   .offset-md-6 {
     margin-right: 50%;
-    margin-left: inherit;
+    margin-left: initial;
   }
   .offset-md-7 {
     margin-right: 58.333333%;
-    margin-left: inherit;
+    margin-left: initial;
   }
   .offset-md-8 {
     margin-right: 66.666667%;
-    margin-left: inherit;
+    margin-left: initial;
   }
   .offset-md-9 {
     margin-right: 75%;
-    margin-left: inherit;
+    margin-left: initial;
   }
   .offset-md-10 {
     margin-right: 83.333333%;
-    margin-left: inherit;
+    margin-left: initial;
   }
   .offset-md-11 {
     margin-right: 91.666667%;
-    margin-left: inherit;
+    margin-left: initial;
   }
 }
 
 @media (min-width: 992px) {
   .offset-lg-0 {
     margin-right: 0;
-    margin-left: inherit;
+    margin-left: initial;
   }
   .offset-lg-1 {
     margin-right: 8.333333%;
-    margin-left: inherit;
+    margin-left: initial;
   }
   .offset-lg-2 {
     margin-right: 16.666667%;
-    margin-left: inherit;
+    margin-left: initial;
   }
   .offset-lg-3 {
     margin-right: 25%;
-    margin-left: inherit;
+    margin-left: initial;
   }
   .offset-lg-4 {
     margin-right: 33.333333%;
-    margin-left: inherit;
+    margin-left: initial;
   }
   .offset-lg-5 {
     margin-right: 41.666667%;
-    margin-left: inherit;
+    margin-left: initial;
   }
   .offset-lg-6 {
     margin-right: 50%;
-    margin-left: inherit;
+    margin-left: initial;
   }
   .offset-lg-7 {
     margin-right: 58.333333%;
-    margin-left: inherit;
+    margin-left: initial;
   }
   .offset-lg-8 {
     margin-right: 66.666667%;
-    margin-left: inherit;
+    margin-left: initial;
   }
   .offset-lg-9 {
     margin-right: 75%;
-    margin-left: inherit;
+    margin-left: initial;
   }
   .offset-lg-10 {
     margin-right: 83.333333%;
-    margin-left: inherit;
+    margin-left: initial;
   }
   .offset-lg-11 {
     margin-right: 91.666667%;
-    margin-left: inherit;
+    margin-left: initial;
   }
 }
 
 @media (min-width: 1200px) {
   .offset-xl-0 {
     margin-right: 0;
-    margin-left: inherit;
+    margin-left: initial;
   }
   .offset-xl-1 {
     margin-right: 8.333333%;
-    margin-left: inherit;
+    margin-left: initial;
   }
   .offset-xl-2 {
     margin-right: 16.666667%;
-    margin-left: inherit;
+    margin-left: initial;
   }
   .offset-xl-3 {
     margin-right: 25%;
-    margin-left: inherit;
+    margin-left: initial;
   }
   .offset-xl-4 {
     margin-right: 33.333333%;
-    margin-left: inherit;
+    margin-left: initial;
   }
   .offset-xl-5 {
     margin-right: 41.666667%;
-    margin-left: inherit;
+    margin-left: initial;
   }
   .offset-xl-6 {
     margin-right: 50%;
-    margin-left: inherit;
+    margin-left: initial;
   }
   .offset-xl-7 {
     margin-right: 58.333333%;
-    margin-left: inherit;
+    margin-left: initial;
   }
   .offset-xl-8 {
     margin-right: 66.666667%;
-    margin-left: inherit;
+    margin-left: initial;
   }
   .offset-xl-9 {
     margin-right: 75%;
-    margin-left: inherit;
+    margin-left: initial;
   }
   .offset-xl-10 {
     margin-right: 83.333333%;
-    margin-left: inherit;
+    margin-left: initial;
   }
   .offset-xl-11 {
     margin-right: 91.666667%;
-    margin-left: inherit;
+    margin-left: initial;
   }
 }
 
