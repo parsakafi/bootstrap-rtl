@@ -447,6 +447,11 @@ textarea.form-control.is-valid {
   padding-right: 0;
 }
 
+.navbar-brand {
+  margin-right: initial;
+  margin-left: 1rem;
+}
+
 .breadcrumb-item + .breadcrumb-item {
   padding-right: 0.5rem;
   padding-left: 0;
